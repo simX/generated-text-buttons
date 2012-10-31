@@ -48,4 +48,4 @@ Some example generated images, which are displayed in the test application:
 
 1. Inner shadows will generate black areas if font ligatures overlap in the vector paths.  Most fonts don't do this, but some, notably Arabic fonts, will display this behavior.  Simply do not use inner shadows for these fonts, by passing 0 for the inner shadow blur radius and CGSizeZero for the offset.  Or fix the code yourself you lazy bum!
 
-2. Emoji, being bitmap graphics, do not work with these routines.  Emoji will be blank, because they do not provide vector path equivalents.  Sorry. 😥
+2. Emoji, being bitmap graphics, do not work with these routines.  Emoji will be blank, because they do not provide vector path equivalents.  Sorry. 😢
