@@ -32,17 +32,17 @@ Some example generated images, which are displayed in the test application:
 
 ![Example Image 1](https://raw.github.com/simx/generated-text-buttons/master/image1.png "Example Image 1")
 
-![Example Image 2](https://raw.github.com/simx/generated-text-buttons/master/image1.png "Example Image 2")
+![Example Image 2](https://raw.github.com/simx/generated-text-buttons/master/image2.png "Example Image 2")
 
-![Example Image 3](https://raw.github.com/simx/generated-text-buttons/master/image1.png "Example Image 3")
+![Example Image 3](https://raw.github.com/simx/generated-text-buttons/master/image3.png "Example Image 3")
 
-![Example Image 4](https://raw.github.com/simx/generated-text-buttons/master/image1.png "Example Image 4")
+![Example Image 4](https://raw.github.com/simx/generated-text-buttons/master/image4.png "Example Image 4")
 
-![Example Image 5](https://raw.github.com/simx/generated-text-buttons/master/image1.png "Example Image 5")
+![Example Image 5](https://raw.github.com/simx/generated-text-buttons/master/image5.png "Example Image 5")
 
-![Example Image 6](https://raw.github.com/simx/generated-text-buttons/master/image1.png "Example Image 6")
+![Example Image 6](https://raw.github.com/simx/generated-text-buttons/master/image6.png "Example Image 6")
 
-![Example Image 7](https://raw.github.com/simx/generated-text-buttons/master/image1.png "Example Image 7")
+![Example Image 7](https://raw.github.com/simx/generated-text-buttons/master/image7.png "Example Image 7")
 
 ### Known Issues
 
