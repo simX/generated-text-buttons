@@ -32,8 +32,6 @@
 
 #pragma mark - Example Button Image Creation Methods
 
-+ (UIImage *)woodenButtonImageWithGlowingSunkenString:(NSString *)_string;
-
 + (UIImage *)woodenImageWithFloatingString:(NSString *)_string;
 
 + (UIImage *)imageWithWhiteFloatingString:(NSString *)_string
@@ -46,11 +44,11 @@
                              fontColor:(UIColor *)_fontColor
                  backgroundImageCenter:(CGPoint)_backgroundImageCenter;
 
-+ (id)buttonImageWithBackground:(UIImage *)backgroundImage
-            glowingSunkenString:(NSString *)_string
-                       fontName:(NSString *)_fontName
-                       fontSize:(CGFloat)_fontSize
-          backgroundImageCenter:(CGPoint)_backgroundImageCenter;
++ (UIImage *)buttonImageWithBackground:(UIImage *)backgroundImage
+                   glowingSunkenString:(NSString *)_string
+                              fontName:(NSString *)_fontName
+                              fontSize:(CGFloat)_fontSize
+                 backgroundImageCenter:(CGPoint)_backgroundImageCenter;
 
 + (UIImage *)woodenButtonImageWithBackground:(UIImage *)backgroundImage
                          typicalSunkenString:(NSString *)_string
@@ -97,7 +95,7 @@
 
 // this is pretty much exactly the same as drawing the string directly with the
 // desired font and color
-+ (id)imageWithString:(NSString *)string
++ (UIImage *)imageWithString:(NSString *)string
              fontName:(NSString *)fontName
              fontSize:(CGFloat)fontSize
             fontColor:(UIColor *)fontColor;

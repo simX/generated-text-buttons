@@ -224,29 +224,6 @@ CTFontRef CTFontCreateFromUIFont(UIFont *font)
 
 #pragma mark - Example Button Image Creation Methods
 
-+ (UIImage *)woodenButtonImageWithGlowingSunkenString:(NSString *)_string;
-{
-    UIFont *theFont = [UIFont fontWithName:@"HelveticaNeue-Bold"
-									  size:19.0];
-	
-	NSMutableAttributedString *theAttributedString = [self mutableAttributedStringWithString:_string
-                                                                                        font:theFont
-                                                                                       color:[UIColor colorWithWhite:1.00 alpha:0.80]];
-	
-	UIImage *woodenStringImage = [self recessedImageFromAttributedString:theAttributedString
-                                                       innerShadowOffset:CGSizeMake(0.0,-1.0)
-                                                   innerShadowBlurRadius:1.0
-                                                        innerShadowColor:[UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:0.1]
-                                                       outerShadowOffset:CGSizeMake(0.0,0.0)
-                                                   outerShadowBlurRadius:8.0
-                                                        outerShadowColor:[UIColor colorWithWhite:1.0 alpha:0.25]
-                                                         backgroundImage:[UIImage imageNamed:@"cork_active.png"]
-												   backgroundImageCenter:CGPointMake(0.5,0.44)
-                                  ];
-    
-    return woodenStringImage;
-}
-
 
 + (UIImage *)woodenImageWithFloatingString:(NSString *)_string;
 {
@@ -332,11 +309,11 @@ CTFontRef CTFontCreateFromUIFont(UIFont *font)
     return woodenStringImage;
 }
 
-+ (id)buttonImageWithBackground:(UIImage *)backgroundImage
-            glowingSunkenString:(NSString *)_string
-                       fontName:(NSString *)_fontName
-                       fontSize:(CGFloat)_fontSize
-          backgroundImageCenter:(CGPoint)_backgroundImageCenter;
++ (UIImage *)buttonImageWithBackground:(UIImage *)backgroundImage
+                   glowingSunkenString:(NSString *)_string
+                              fontName:(NSString *)_fontName
+                              fontSize:(CGFloat)_fontSize
+                 backgroundImageCenter:(CGPoint)_backgroundImageCenter;
 {
     UIImage *buttonImage = [self woodenButtonImageWithBackground:backgroundImage
                                              glowingSunkenString:_string
@@ -469,7 +446,7 @@ CTFontRef CTFontCreateFromUIFont(UIFont *font)
 
 // this is pretty much exactly the same as drawing the string directly with the
 // desired font and color
-+ (id)imageWithString:(NSString *)string
++ (UIImage *)imageWithString:(NSString *)string
              fontName:(NSString *)fontName
              fontSize:(CGFloat)fontSize
             fontColor:(UIColor *)fontColor;
@@ -778,10 +755,10 @@ CTFontRef CTFontCreateFromUIFont(UIFont *font)
     }
     
     if (_innerBlurRadius != 0 && (! CGSizeEqualToSize(_innerOffset, CGSizeMake(0,0)))) {
-    [transformedBezierPath fillWithInnerShadowUsingShadowOffset:_innerOffset
-                                                     shadowBlur:_innerBlurRadius
-                                                    shadowColor:_innerShadowColor
-                                                transformOffset:CGSizeMake(0,0)];
+        [transformedBezierPath fillWithInnerShadowUsingShadowOffset:_innerOffset
+                                                         shadowBlur:_innerBlurRadius
+                                                        shadowColor:_innerShadowColor
+                                                    transformOffset:CGSizeMake(0,0)];
     }
 	
 	
